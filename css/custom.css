@@ -1,0 +1,132 @@
+.socialCard {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+  gap: 10px;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+/* linedin */
+.containerOne:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+/* leetcode */
+.containerTwo:hover {
+  background-color: #f5a638;
+  transition-duration: 0.3s;
+}
+/* github */
+.containerThree:hover {
+  background-color: #000000;
+  transition-duration: 0.3s;
+}
+/* codechef */
+.containerFour:hover {
+  background-color: #8b4513;
+  transition-duration: 0.3s;
+}
+/* codeforces */
+.containerFive:hover {
+  background-color: #1da1f2;
+  transition-duration: 0.3s;
+}
+/* instagram */
+.containerSix:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+}
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+.socialSvg {
+  width: 20px;
+}
+.codechefSvg,
+.geeksforgeeksSvg {
+  width: 24px;
+}
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.step {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.v-stepper {
+  position: relative;
+}
+
+.step .circle {
+  background-color: white;
+  border: 3px solid gray;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.step .line {
+  top: 21px;
+  left: 11px;
+  height: 100%;
+  position: absolute;
+  border-left: 3px solid #007bff;
+}
+
+.step.current .circle {
+  visibility: visible;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.step.completed .circle {
+  visibility: visible;
+  border-color: #007bff;
+}
+
+.step:last-child .line {
+  border-left: 3px solid white;
+  z-index: -1;
+}
+
+.content {
+  width: 100%;
+  margin-left: 15px;
+}
