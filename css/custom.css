@@ -130,3 +130,32 @@
   width: 100%;
   margin-left: 15px;
 }
+
+.c-go-top {
+  background: none repeat scroll 0 0 padding-box #007bff;
+  bottom: 20px;
+  width: 40px;
+  font-size: larger;
+  text-align: center;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  color: #eee;
+  display: none;
+  font-size: 12px;
+  opacity: 0.8;
+  padding: 10px;
+  position: fixed;
+  right: 5%;
+  text-decoration: none;
+  z-index: 999;
+}
+
+.c-go-top:hover,
+.c-go-top:focus,
+.c-go-top:active,
+.c-go-top:visited {
+  color: #fff;
+  outline: 0;
+  display: block;
+  text-decoration: none;
+}
