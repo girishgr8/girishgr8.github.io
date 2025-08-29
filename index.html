@@ -85,19 +85,20 @@
 
 				<p class="lead mb-3">
 					I am currently working as a <b>Software Engineer at Qualcomm</b> and have total of more than 1 year of experience.
+					I completed my Master's degree in Computer Science and Engineering from IIT Hyderabad
+					and I worked as the Tech Cell Manager at Office of Career Services(OCS) at IIT Hyderabad.
 					<!-- I am currently pursuing my M.Tech Degree from IIT Hyderabad in Computer Science & Engineering. I am
 					currently Technical Manager at Office of Career Services(OCS) at IIT Hyderabad. I secured an AIR 289
 					in GATE CSE 2022. I received the Academic Excellence Award at IIT Hyderabad for getting the highest
 					GPA in M.Tech CSE for Calendar Year 2022. -->
 					I have worked as a <b>Software Developer at Oracle Financial Services Software(OFSS)</b> for 1 year.
-					I completed my Master's degree in Computer Science and Engineering from IIT Hyderabad 
-					and I worked as the Tech Cell Manager at Office of Career Services(OCS) at IIT Hyderabad.
 					<!-- I have completed my B.Tech in Computer Engineering at K.J. Somaiya College of Engineering,
 					Vidyavihar, Mumbai, India with 9.46/10 CGPA and was among top 10 students from a batch of 140
 					students. --> 
-					I have experience working with Java, C++, C, Data Structures, Algorithms, Spring Boot, Microservices, 
-					Docker, Backend Development, Operating Systems, RTOS, NodeJS, ReactJS, OracleJET, Flask, MySQL, Oracle SQL, MongoDB databases.
-					I also have hands-on experience using tools like Git, Wireshark, PL-SQL Developer & OracleSQL Developer.
+					I have experience working with Java, C/C++, ZephyrOS, FreeRTOS, Embedded Systems, OpenWFD, Operating Systems, RTOS,
+					Data Structures, Algorithms, Spring Boot, Microservices, Docker, Backend Development, NodeJS, ReactJS, OracleJET, Flask, 
+					MySQL, Oracle SQL databases.
+					I also have hands-on experience using tools like Git, Perforce, Wireshark, PL-SQL Developer & OracleSQL Developer.
 				</p>
 				<p class="lead mb-5">
 					You can view my Interview Experiences: <a href="https://www.youtube.com/watch?v=6cIZp_CAmLs" target="_blank">Qualcomm</a> and <a href="https://www.youtube.com/watch?v=MY0wRdmsmCk" target="_blank">Mathworks</a>
@@ -140,11 +141,13 @@
 						<h3 class="mb-0">Qualcomm</h3>
 						<div class="subheading mb-3">Software Engineer</div>
 						<ul>
-							<li>Developing Display Application framework in an RTOS environment for IOT wearable devices with ARM Cortex M55.</li>
-							<li>Development of RTOS abstraction layer on top RTOS like FreeRTOS and ZephyrOS 
-								to ensure that Display App framework is unaffected by changes in underlying RTOS.</li>
-							<li>Doing comparative study of ZephyrOS vs FreeRTOS for kernel objects such as threads, mutexes, pipes, signals, timers, etc. 
-								for understanding their usage on performance.</li>
+							<li>Designed and implemented an <b>RTOS abstraction layer(OSAL)</b> over OSes like <b>FreeRTOS</b> and <b>ZephyrOS</b>, enabling application portability and independence of the application from the underlying RTOS.</li>
+							<li>Implemented features such as <b>Adaptive ALS brightness control</b>, <b>Bluetooth notification</b> expanded view, <b>Burn-in protection</b>, glitchless <b>Display Offload</b> to drive panel from low-power <b>ARM Cortex M55</b> MCU core.</li>
+							<li>Optimized <b>power management</b> by orchestrating offload of Display and Touch tasks from Apps core to M55 core, efficiently utilizing different memory domains such as <b>PSRAM</b>, <b>TCM</b>, and <b>AODRAM</b>.</li>
+							<li>Developed a wrapper for interacting with <b>Display Panel</b> using <b>OpenWFD</b> specification for <b>Display SW</b> stack.</li>
+							<li>Developed <b>Vote Aggregator</b> for managing <b>power</b> and <b>frequency</b> of <b>PSRAM</b> memory voted by various subsystems.</li>
+							<li>Designed and developed the project <b>build system</b> end-to-end using <b>CMake</b> and integrated various <b>ZephyrOS</b> modules such as <b>Shell</b>, <b>Logging</b> and <b>Kconfig</b>.</li>
+							<li>Designed and developed a CLI application using <b>Zephyr Shell</b> to validate and benchmark OSAL performance, leveraging <b>High Resolution Timer (HRT) i.e. Hardware Timer</b> for precise latency measurement and analysis. This tool provided critical insights that guided the team in optimizing software design decisions.</li>
 						</ul>
 					</div>
 					<div class="flex-shrink-0"><span class="text-primary">Jul 2024 - Present</span></div>
@@ -156,17 +159,16 @@
 						<h3 class="mb-0">Oracle Financial Services Software (OFSS)</h3>
 						<div class="subheading mb-3">Associate Consultant</div>
 						<ul>
-							<li>Developed 30+ RESTful and SOAP APIs using Java & by following the OOPS coding practices and design patterns.</li>
-							<li>Added 20+ new screens to Oracle Banking Product(Flexcube). Developed at least 50 PL/SQL procedures & triggers.</li>
-							<li>Partitioned 235 tables based on list, hash, interval and range strategies, also created indexes and SQL constraints.</li>
-							<li>Nominated for the award of "Best Fresher" for Fiscal Year 2021-22.</li>
-							<li>Developed multiple Python utilities to speed up the work like automatic deployment of database scripts, 
+							<li>Developed <b>30+ RESTful and SOAP APIs</b> using Java & by following the OOPS coding practices and design patterns.</li>
+							<li>Added <b>20+ new screens to Oracle Banking Product(Flexcube)</b>. Developed at least <b>50 PL/SQL procedures & triggers</b>.</li>
+							<li>Partitioned <b>235 tables based on list, hash, interval and range strategies</b>, also created <b>indexes and SQL constraints</b>.</li>
+							<li>Nominated for the award of <b>"Best Fresher" for Fiscal Year 2021-22</b>.</li>
+							<li>Developed multiple Python utilities to speed up the work like <b>automatic deployment of database scripts</b>, 
 								and utility that does pre-preparations for commit process.</li>
 							<li>Improved the performance of APIs by identifying the bottlenecks on DB queries, 
-								created indexes, wrote optimized queries to avoid unnecessary joins, 
-								decided right partition strategies for large tables 
-								and implemented Redis cache.</li>
-							<li>I was PoC for running the batch (End-Of-Day i.e. EOD transactions). 
+								<b>created indexes</b>, wrote <b>optimized queries to avoid unnecessary joins</b>, 
+								decided right <b>partition strategies for large tables.</b></li>
+							<li>I was PoC for running the batch (End-Of-Day i.e. EOD transactions) 
 								and gave sessions on same to new joinees to the team.</li>
 							<li><a href="https://drive.google.com/file/d/1gijYzO4MaOSIdnYOwf_gKw6SL6AoVHks/view?usp=sharing"
 									target="_blank">Appreciation Letter</a></li>
@@ -201,7 +203,7 @@
 								normalization of tables to store data optimally.</li>
 						</ul>
 					</div>
-					<div class="flex-shrink-0"><span class="text-primary">Feb 2023xf - Apr 2024</span></div>
+					<div class="flex-shrink-0"><span class="text-primary">Feb 2023 - Apr 2024</span></div>
 				</div>
 
 				<!-- Experience 4 -->
@@ -312,9 +314,9 @@
 					  <div class="flex-grow-1">
 						<h3 class="mb-0">Indian Institute of Technology, Hyderabad (IIT Hyderabad)</h3>
 						<div class="subheading mb-2">Master of Technology (M.Tech) in Computer Science & Engineering</div>
-						<p>CGPA: 8.67/10 (Uptill 3rd semester)</p>
+						<p>CGPA: 8.67/10</p>
 					  </div>
-					  <div class="flex-shrink-0"><span class="text-primary">Aug 2022 - Jun 2024(Expected)</span></div>
+					  <div class="flex-shrink-0"><span class="text-primary">Aug 2022 - Jun 2024</span></div>
 					</div>
 				  </div>
 				</div>
@@ -332,10 +334,11 @@
 						<h3 class="mb-0">K. J. Somaiya College of Engineering, Vidyavihar, Mumbai</h3>
 						<div class="subheading mb-2">Bachelor of Technology (B.Tech) in Computer Engineering</div>
 						<p>CGPA: 9.46/10</p>
-						<div class="mb-2"><a href="https://drive.google.com/file/d/1-afq3u7gWNpFy-8LhsOb738Uvk--y-Y8/view?usp=share_link"
+						<!-- <div class="mb-2"><a href="https://drive.google.com/file/d/1-afq3u7gWNpFy-8LhsOb738Uvk--y-Y8/view?usp=share_link"
 						  target="_blank">Degree Certificate</a> and <a
 						  href="https://drive.google.com/file/d/1FNIGOKFp59CUpexjX_l09btjSv2uCHeY/view?usp=share_link"
-						  target="_blank">Semester Marksheets</a></div>
+						  target="_blank">Semester Marksheets</a>
+						</div> -->
 					  </div>
 					  <div class="flex-shrink-0"><span class="text-primary">Jul 2017 - Jun 2021</span></div>
 					</div>
@@ -353,8 +356,9 @@
 						<h3 class="mb-0">M. S. S. T. College</h3>
 						<div class="subheading mb-2">Higher Secondary School Certificate(HSC) - Science(Bifocal)</div>
 						<p>Percentage: 90.92%</p>
-						<div class="mb-2"><a href="https://drive.google.com/file/d/1PJJTUBUEhBZmYZu5pNeC0efEb5ElA1Hc/view?usp=share_link"
-						  target="_blank">12th Marksheet</a></div>
+						<!-- <div class="mb-2"><a href="https://drive.google.com/file/d/1PJJTUBUEhBZmYZu5pNeC0efEb5ElA1Hc/view?usp=share_link"
+						  target="_blank">12th Marksheet</a>
+						</div> -->
 					  </div>
 					  <div class="flex-shrink-0"><span class="text-primary">Jun 2015 - Feb 2017</span></div>
 					</div>
@@ -372,8 +376,9 @@
 						<h3 class="mb-0">I.E.S. Chandrakant Patkar Vidyalaya School</h3>
 						<div class="subheading mb-2">Secondary School Certificate(SSC)</div>
 						<p>Percentage: 94.80%</p>
-						<div class="mb-2"><a href="https://drive.google.com/file/d/1KDKkcVX1UlUgHvpt3HveWhLXjhYIVAVT/view?usp=share_link"
-						  target="_blank">10th Marksheet</a></div>
+						<!-- <div class="mb-2"><a href="https://drive.google.com/file/d/1KDKkcVX1UlUgHvpt3HveWhLXjhYIVAVT/view?usp=share_link"
+						  target="_blank">10th Marksheet</a>
+						</div> -->
 					  </div>
 					  <div class="flex-shrink-0"><span class="text-primary">Jun 2005 - Mar 2015</span></div>
 					</div>
